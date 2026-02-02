@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bài tập TH01</title>
+</head>
+<body>
+
+<form method="POST">
+
+    <b>Basic Info</b>
+    <hr>
+    
+    <table cellpadding="5">
+        <tr>
+            <td>Employee ID</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>Dodsworth</td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td><input type="text" name="firstname" value="Anne"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="xxx"> XXX<br>
+                <input type="radio" name="gender" value="zzz" checked> ZZZ
+            </td>
+        </tr>
+        <tr>
+            <td>Title</td>
+            <td><input type="text" name="title" value="Sales Representative"></td>
+        </tr>
+        <tr>
+            <td>Suffix</td>
+            <td><input type="text" name="suffix" value="Ms."></td>
+        </tr>
+        <tr>
+            <td>BirthDate</td>
+            <td><input type="text" name="birthdate" value="1969-07-02"></td>
+        </tr>
+        <tr>
+            <td>HireDate</td>
+            <td><input type="text" name="hiredate" value="1994-11-15"></td>
+        </tr>
+        <tr>
+            <td>SSN # (if applicable)</td>
+            <td><input type="text" name="ssn"></td>
+        </tr>
+        <tr>
+            <td>Reports To</td>
+            <td>
+                <select name="report_to">
+                    <option>Buchanan</option>
+                    <option>Fuller</option>
+                </select>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <b>Contact Info</b>
+    <hr>
+
+    <table cellpadding="5">
+        <tr>
+            <td>Email</td>
+            <td><input type="text" name="email" value="name@example.com"></td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td><input type="text" name="address" value="7 Houndstooth Rd."></td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td><input type="text" name="city" value="London"></td>
+        </tr>
+        <tr>
+            <td>Region</td>
+            <td><input type="text" name="region"></td>
+        </tr>
+        <tr>
+            <td>Postal Code</td>
+            <td><input type="text" name="zip" value="WG2 7LT"></td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>
+                <select name="country">
+                    <option>Russian Federation</option>
+                    <option selected>UK</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>US Home Phone</td>
+            <td><input type="text" name="phone" value="(234)234-2342"></td>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td><input type="text" name="photo" value="EmpID9.bmp"></td>
+        </tr>
+    </table>
+
+    <br>
+
+    <b>Optional Info</b>
+    <hr>
+
+    <table cellpadding="5">
+        <tr>
+            <td valign="top">Notes</td>
+            <td>
+                <textarea name="notes" rows="4" cols="40">Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German.</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td valign="top">Preferred Shift</td>
+            <td>
+                <input type="checkbox" name="shift[]" value="regular"> Regular<br>
+                <input type="checkbox" name="shift[]" value="gravy" checked> Gravy Yard
+            </td>
+        </tr>
+        <tr>
+            <td>Active?</td>
+            <td><input type="checkbox" name="active" checked></td>
+        </tr>
+        <tr>
+            <td valign="top">Are you human?</td>
+            <td>
+                <h3>TIDAWO</h3>
+                <small>Click to change</small><br>
+                <input type="text" name="captcha">
+            </td>
+        </tr>
+    </table>
+
+    <br>
+    
+    <div align="right">
+        <button type="submit">Submit</button>
+        <button type="button">Cancel</button>
+    </div>
+    <font size="3">* required </font>
+</form>
+
+</body>
+</html>
