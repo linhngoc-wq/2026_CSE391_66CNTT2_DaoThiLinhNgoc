@@ -1,0 +1,101 @@
+* { box-sizing: border-box; }
+
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #444;
+}
+
+/* Khung có 2 vạch dọc 2 bên */
+.wireframe{
+  position: relative;
+  padding: 70px 0;
+  background: #f2f2f2;
+}
+
+.wireframe::before,
+.wireframe::after{
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  width: 3px;
+  background: #7fc6d1; /* xanh nhạt giống hình */
+}
+
+.wireframe::before{ left: 60px; }
+.wireframe::after{ right: 60px; }
+
+.container{
+  width: min(980px, 92%);
+  margin: 0 auto;
+}
+
+/* Tiêu đề */
+.title{
+  text-align: center;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 1.4;
+  margin: 0 0 50px;
+  color: #555;
+}
+
+/* 2 cột */
+.content{
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* Card trái */
+.left-card{
+  flex: 1;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(0,0,0,0.06);
+  padding: 28px;
+  color: #666;
+}
+
+.left-card h3{
+  margin: 0 0 18px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #555;
+}
+
+.left-card p{
+  margin: 0 0 22px;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.author{
+  margin-top: 35px;
+  font-size: 13px;
+  color: #666;
+}
+
+.author span{
+  color: #888;
+}
+
+/* Text phải */
+.right-text{
+  flex: 1.4;
+  color: #666;
+}
+
+.right-text p{
+  margin: 0 0 18px;
+  line-height: 1.9;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px){
+  .content{ flex-direction: column; }
+  .wireframe::before,
+  .wireframe::after{ display: none; } /* màn nhỏ ẩn vạch cho gọn */
+}
