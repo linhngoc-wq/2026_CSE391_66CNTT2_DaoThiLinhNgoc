@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+/*Hang 2 input tren cung*/
+.row {
+    display: flex;
+    gap: 20px;
+}
+.row input {
+    flex: 1;
+}
+input, text {
+    padding: 12px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+textarea {
+    height: 200px;
+    resize: none;
+}
+.bottom {
+    padding: 12px 25px;
+    background: #5bc0de;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+button:hover {
+    background: #31b0d5;
+}
