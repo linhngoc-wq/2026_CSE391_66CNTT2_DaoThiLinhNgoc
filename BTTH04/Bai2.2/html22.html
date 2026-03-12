@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đặt Hàng</title>
+    <link rel="stylesheet" href="css22.css">
+</head>
+<body>
+    <div class="container order-container">
+    <h2>Form Đặt Hàng</h2>
+    <form id="orderForm">
+        <div class="form-group">
+            <label>Sản phẩm:</label>
+            <select id="product">
+                <option value="">-- Chọn sản phẩm --</option>
+                <option value="Laptop" data-price="15000000">Laptop (15.000.000đ)</option>
+                <option value="Iphone" data-price="20000000">Iphone (20.000.000đ)</option>
+                <option value="Chuột" data-price="500000">Chuột Gaming (500.000đ)</option>
+            </select>
+            <span class="error-msg" id="productError"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Số lượng (1-99):</label>
+            <input type="number" id="quantity" value="1" min="1" max="99">
+            <span class="error-msg" id="quantityError"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Ngày giao hàng:</label>
+            <input type="date" id="deliveryDate">
+            <span class="error-msg" id="deliveryDateError"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Địa chỉ giao:</label>
+            <textarea id="address" rows="2" placeholder="Ít nhất 10 ký tự..."></textarea>
+            <span class="error-msg" id="addressError"></span>
+        </div>
+
+        <div class="form-group">
+            <label>Ghi chú (Tùy chọn): <span id="charCount">0/200</span></label>
+            <textarea id="note" rows="2" maxlength="250"></textarea>
+            <span class="error-msg" id="noteError"></span>
+        </div>
+
+        <div class="total-box">
+            Tổng tiền: <span id="totalDisplay">0đ</span>
+        </div>
+
+        <button type="submit" id="btnOrder">Đặt Hàng Ngay</button>
+    </form>
+
+    <div id="confirmOverlay" class="overlay" style="display: none;">
+        <div class="modal">
+            <h3>Xác nhận đơn hàng?</h3>
+            <div id="summaryContent"></div>
+            <div class="modal-buttons">
+                <button id="btnFinalConfirm" class="btn-success">Xác nhận</button>
+                <button id="btnCancel" class="btn-danger">Hủy</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js22.js"></script>
+</body>
+</html>

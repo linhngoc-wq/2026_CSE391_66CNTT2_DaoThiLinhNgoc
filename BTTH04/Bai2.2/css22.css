@@ -1,0 +1,17 @@
+.order-container { max-width: 500px; }
+.total-box { 
+    background: #f1f1f1; padding: 15px; text-align: right; 
+    font-size: 1.2em; font-weight: bold; margin: 15px 0; border-radius: 5px;
+}
+#totalDisplay { color: #e74c3c; }
+
+/* Modal styles */
+.overlay {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.7); display: flex; align-items: center; justify-content: center;
+}
+.modal { background: white; padding: 25px; border-radius: 10px; width: 80%; max-width: 400px; }
+.modal-buttons { display: flex; gap: 10px; margin-top: 20px; }
+.btn-success { background: #27ae60; color: white; flex: 1; padding: 10px; border: none; cursor: pointer; }
+.btn-danger { background: #e74c3c; color: white; flex: 1; padding: 10px; border: none; cursor: pointer; }
+.char-red { color: red; font-weight: bold; }
