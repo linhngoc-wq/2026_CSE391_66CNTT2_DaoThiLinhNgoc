@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Điểm Sinh Viên - K66</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Quản lý Điểm Sinh Viên</h2>
+        
+        <div class="input-group">
+            <input type="text" id="fullname" placeholder="Họ tên sinh viên...">
+            <input type="number" id="score" placeholder="Điểm (0-10)" min="0" max="10" step="0.1">
+            <button id="btnAdd">Thêm vào danh sách</button>
+        </div>
+
+        <hr> <div class="filters">
+            <strong>Bộ lọc:</strong>
+            <input type="text" id="txtSearch" placeholder="Tìm tên sinh viên...">
+            <select id="filterRank">
+                <option value="All">Tất cả xếp loại</option>
+                <option value="Giỏi">Giỏi</option>
+                <option value="Khá">Khá</option>
+                <option value="Trung bình">Trung bình</option>
+                <option value="Yếu">Yếu</option>
+            </select>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên</th>
+                    <th id="sortScore" class="sortable">
+                        Điểm <span id="sortIcon">↕</span>
+                    </th>
+                    <th>Xếp loại</th>
+                    <th>Thao tác</th>
+                </tr>
+            </thead>
+            <tbody id="studentTableBody">
+                </tbody>
+        </table>
+
+        <div class="statistics">
+            <p>Tổng số sinh viên: <strong id="totalStudents">0</strong></p>
+            <p>Điểm trung bình lớp: <strong id="avgScore">0.00</strong></p>
+        </div>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+</html>
