@@ -1,0 +1,20 @@
+.form-container { max-width: 450px; }
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-weight: bold; }
+.form-group input { width: 100%; padding: 10px; box-sizing: border-box; }
+
+/* Style cho lỗi */
+.error-msg { color: red; font-size: 12px; height: 15px; display: block; margin-top: 5px; }
+.input-error { border: 1px solid red !important; background-color: #fff2f2; }
+.input-success { border: 1px solid green !important; }
+
+#btnSubmit {
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
