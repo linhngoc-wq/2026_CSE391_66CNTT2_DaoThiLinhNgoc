@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Đăng Ký 3 Bước - BTTVN 2</title>
+    <link rel="stylesheet" href="css32.css">
+</head>
+<body>
+    <div class="container multi-step-container">
+        <h2>Đăng Ký Thành Viên</h2>
+
+        <div class="progress-stepper">
+            <div class="progress-line" id="progressLine"></div>
+            <div class="circle active">1</div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+        </div>
+
+        <form id="multiStepForm">
+            <div class="step-content active" id="step1">
+                <h3>Bước 1: Thông tin cá nhân</h3>
+                <div class="form-group">
+                    <label>Họ và tên:</label>
+                    <input type="text" id="ms_name" placeholder="Ít nhất 3 ký tự...">
+                </div>
+                <div class="form-group">
+                    <label>Ngày sinh:</label>
+                    <input type="date" id="ms_dob">
+                </div>
+                <button type="button" class="btn-next">Tiếp theo</button>
+            </div>
+
+            <div class="step-content" id="step2">
+                <h3>Bước 2: Thông tin tài khoản</h3>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" id="ms_email" placeholder="example@gmail.com">
+                </div>
+                <div class="form-group">
+                    <label>Mật khẩu:</label>
+                    <input type="password" id="ms_pass" placeholder="Ít nhất 8 ký tự">
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn-prev">Quay lại</button>
+                    <button type="button" class="btn-next">Tiếp theo</button>
+                </div>
+            </div>
+
+            <div class="step-content" id="step3">
+                <h3>Bước 3: Xác nhận thông tin</h3>
+                <div id="summaryBox" class="summary-box"></div>
+                <div class="btn-group">
+                    <button type="button" class="btn-prev">Quay lại</button>
+                    <button type="submit" class="btn-submit">Hoàn tất</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js32.js"></script>
+</body>
+</html>
