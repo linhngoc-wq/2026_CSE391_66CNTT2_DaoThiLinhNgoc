@@ -1,0 +1,21 @@
+.form-container { max-width: 450px; margin: auto; padding: 20px; }
+.form-group { margin-bottom: 15px; }
+.error-msg { color: red; font-size: 12px; display: block; height: 15px; margin-top: 5px; }
+
+/* Thanh độ mạnh mật khẩu */
+.strength-meter { height: 6px; background: #ddd; margin-top: 10px; border-radius: 3px; overflow: hidden; }
+#strengthBar { height: 100%; width: 0; transition: 0.3s ease; }
+#strengthText { font-size: 11px; font-weight: bold; }
+
+/* Các màu mức độ */
+.weak { background: #ff4d4d; width: 33%; }
+.medium { background: #ffd93d; width: 66%; }
+.strong { background: #2ecc71; width: 100%; }
+
+/* Nút ẩn hiện mật khẩu */
+#togglePass {
+    position: absolute; right: 5px; top: 50%; transform: translateY(-50%);
+    border: none; background: none; cursor: pointer; font-size: 18px;
+}
+
+#nameCounter { float: right; font-weight: normal; font-size: 12px; }
